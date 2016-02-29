@@ -1,0 +1,4 @@
+use airlines;
+
+LOAD DATA LOCAL INFILE '$LOC/database-course-lab-5/2008.csv' INTO TABLE ontime FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n'  IGNORE 1 LINES;
+
