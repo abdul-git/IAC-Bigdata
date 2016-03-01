@@ -69,6 +69,7 @@ Execute scripts
 ./1_create_pw.ksh
 
 Script above will create env file, so mysql login will not prompt for password.
+
 ./2_drop_create_airlines_tables.ksh
 
 Script above will download airlines data for year 2008, create database called “airlines” and populate three tables.
