@@ -7,9 +7,9 @@
 ###------------
 ##
 ## Change below to your directory structure!
-export LOC=/root/IAC-Bigdata/labs/week3/setup_mysql/airlines
+export LOC=~/IAC-Bigdata/labs/week3/setup_mysql/airlines
 ###-----------
-### End Environment 
+### End Environment
 ###-----------
 
 
@@ -27,25 +27,46 @@ wget http://stat-computing.org/dataexpo/2009/airports.csv
 
 echo "check if ontime file exists and uncompress "
 check_ontime=`ls 2008.csv|wc -l`
-echo $check_ontime
+echo ""
+echo ""
+echo "Ontime file found!!! count = $check_ontime"
 
+echo ""
+echo ""
 if [ $check_ontime = 1 ]; then
+echo ""
+echo ""
 echo "file already exists....moving to next step"
-else 
+echo ""
+echo ""
+else
 wget http://stat-computing.org/dataexpo/2009/2008.csv.bz2
+echo ""
+echo ""
 echo " uncompress bz2 file"
 
+echo ""
+echo ""
 bunzip2 2008.csv.bz2
 fi
 
-
-get_count=`ls *.csv $LOC |wc -l`
-if [ get_count < 3 ]; then
+cd $LOC
+get_count=`ls *.csv |wc -l`
+echo ""
+echo ""
+echo "CSV files count --- $get_count ---"
+echo ""
+echo ""
+if [ ${get_count} -lt 3 ]  ; then
 echo " datafiles are missing"
-else 
+exit 0;
+else
 
+echo ""
+echo ""
 echo "=========================="
 echo "creating database"
+echo ""
 echo ""
 ## Create Airlines database MySQL
 #/usr/bin/mysql < create_airlines.sql
@@ -73,3 +94,4 @@ select count(*) from airlines.carriers;
 select count(*) from airlines.airports;
 EOF
 fi
+
