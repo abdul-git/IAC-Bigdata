@@ -7,7 +7,7 @@
 ###------------
 ##
 ## Change below to your directory structure!
-export LOC=/root/IAC-Bigdata/week3/setup_mysql/airlines
+export LOC=/root/IAC-Bigdata/labs/week3/setup_mysql/airlines
 ###-----------
 ### End Environment 
 ###-----------
