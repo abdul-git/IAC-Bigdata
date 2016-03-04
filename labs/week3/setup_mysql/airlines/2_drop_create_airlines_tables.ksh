@@ -92,6 +92,11 @@ show tables;
 select count(*) from airlines.ontime;
 select count(*) from airlines.carriers;
 select count(*) from airlines.airports;
+
+CREATE USER 'ec2'@'localhost' IDENTIFIED BY 'cloudera'; 
+GRANT ALL PRIVILEGES ON *.* TO 'ec2'@'localhost' WITH GRANT OPTION; 
+grant all on airlines.* TO 'ec2'@'%' IDENTIFIED BY 'cloudera'; 
+
 EOF
 fi
 

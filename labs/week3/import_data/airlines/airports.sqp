@@ -1,5 +1,6 @@
+host=`hostname`
 sqoop import  \
---connect jdbc:mysql://localhost:3306/airlines  \
+--connect jdbc:mysql://${host}:3306/airlines  \
  --username root --password cloudera  \
 --table airports \
 --delete-target-dir \
