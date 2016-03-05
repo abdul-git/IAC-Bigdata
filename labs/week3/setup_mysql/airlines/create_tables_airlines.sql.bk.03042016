@@ -38,15 +38,11 @@ carrier_name varchar(30)
 );
 
 create table airports (
-airport_id varchar(5),
+IATA varchar(5),
 airport varchar(20),
 city varchar(20),
+state varchar(10),
 country varchar(20),
-IATA_FAA varchar(5),
-ICAO	varchar(4),
 lat FLOAT ( 11, 7 ),  
-lng FLOAT ( 11, 7 ),
-Altitude int,
-Timezone varchar(5),
-DST_timezone varchar(65)
+lng FLOAT ( 11, 7 )
 );

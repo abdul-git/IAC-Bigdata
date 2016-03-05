@@ -23,8 +23,14 @@ rm carriers.csv
 rm airports.csv
 
 wget http://stat-computing.org/dataexpo/2009/carriers.csv
-wget http://stat-computing.org/dataexpo/2009/airports.csv
+#wget http://stat-computing.org/dataexpo/2009/airports.csv
+wget https://raw.githubusercontent.com/jpatokal/openflights/master/data/airports.dat
 
+cd $LOC
+mv carriers.csv carriers.csv1
+#mv airports.csv airports.csv1
+sed 's/\"//g' carriers.csv1 > carriers.csv
+sed 's/\"//g'  airports.dat >  airports.csv 
 echo "check if ontime file exists and uncompress "
 check_ontime=`ls 2008.csv|wc -l`
 echo ""
@@ -76,8 +82,8 @@ mysql <<EOF
 use airlines;
 
 LOAD DATA LOCAL INFILE '$LOC/2008.csv' INTO TABLE ontime FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n'  IGNORE 1 LINES;
-LOAD DATA LOCAL INFILE '$LOC/carriers.csv' INTO TABLE carriers FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n'  IGNORE 1 LINES;
-LOAD DATA LOCAL INFILE '$LOC/airports.csv' INTO TABLE airports FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n'  IGNORE 1 LINES;
+LOAD DATA LOCAL INFILE '$LOC/carriers.csv' INTO TABLE carriers FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\n'  IGNORE 1 LINES;
+LOAD DATA LOCAL INFILE '$LOC/airports.csv' INTO TABLE airports FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\n'  IGNORE 1 LINES;
 
 
 

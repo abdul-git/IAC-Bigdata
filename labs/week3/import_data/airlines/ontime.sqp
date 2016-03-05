@@ -1,0 +1,8 @@
+host=`hostname`
+sqoop import  \
+--connect jdbc:mysql://${host}:3306/airlines  \
+ --username root --password cloudera  \
+--table ontime \
+--delete-target-dir \
+--target-dir  /user/hive/warehouse/airlines.db/ontime \
+--hive-import  --hive-table airlines.ontime --verbose -m 1
