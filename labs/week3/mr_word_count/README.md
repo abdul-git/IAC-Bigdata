@@ -1,8 +1,8 @@
-## Execute hadoop WC command
+###Execute hadoop WC command
 ##create directory in HDFS
 hadoop fs -mkdir input
 
-#copy some text file
+##copy some text file
 
 hadoop fs -put sample.txt input 
 
