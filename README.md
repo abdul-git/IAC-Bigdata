@@ -1,15 +1,15 @@
-Introduction
+####Introduction
 
 
 This document is only for reference purpose to help students with weekly labs and is a guide to work hands-on with Big-Data stack.  This document is living document and will be update during and after the course.
 
 We will use this repo to setup labs and individual cluster in order to work on hands on exercises.
 
-Week-1: Intro to Hadoop
+###Week-1: Intro to Hadoop
 
-Week-2: Cloudera hadoop cluster deployment in AWS
+#Week-2: Cloudera hadoop cluster deployment in AWS
 
-Week-3a: Cloudera hadoop cluster deployment in AWS
+#Week-3a: Cloudera hadoop cluster deployment in AWS
 
 Continue from previous week.
 •	Add a new data node to existing cluster
@@ -17,7 +17,7 @@ Continue from previous week.
 •	Perform manual and automatic switchover
 •	Configure RM - HA
 
-Week-3b: MYSQL Setup
+#Week-3b: MYSQL Setup
 
 After successful cluster deployment in AWS we will need to setup MySQL database from scripts that can be found at GitHub repo for data movement exercises.
 
@@ -64,7 +64,7 @@ echo ""
 echo "================="
 
 
-Execute scripts
+#Execute scripts
 
 ./1_create_pw.ksh
 
@@ -76,12 +76,12 @@ Script above will download airlines data for year 2008, create database called �
 
 
 
-Week-4
+#Week-4
 A.	 SQOOP SETUP AND IMPORT DATA FROM MYSQL
 B.	CREATE HIVE TABLES FROM EXISTING DATASET
 C.	CREATE TWITTER STREAM USING FLUME 
 
-Week-5
+#Week-5
 
 Visual
 
