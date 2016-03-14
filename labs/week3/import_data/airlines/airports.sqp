@@ -1,7 +1,7 @@
 host=`hostname`
 sqoop import  \
 --connect jdbc:mysql://${host}:3306/airlines  \
- --username root --password cloudera  \
+ --username ec2 --password cloudera  \
 --table airports \
 --delete-target-dir \
 --target-dir  /user/hive/warehouse/airlines.db/airports \

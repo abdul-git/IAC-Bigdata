@@ -1,6 +1,6 @@
 sqoop import  \
 --connect jdbc:mysql://localhost:3306/retail_db  \
- --username root --password cloudera  \
+ --username ec2 --password cloudera  \
 --table orders  \
 --delete-target-dir \
 --target-dir  /user/hive/warehouse/retail_db.db/orders \
