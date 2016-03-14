@@ -1,5 +1,6 @@
+host=`hostname`
 sqoop import  \
---connect jdbc:mysql://localhost:3306/retail_db  \
+--connect jdbc:mysql://${host}:3306/retail_db  \
  --username ec2 --password cloudera  \
 --table orders  \
 --delete-target-dir \
