@@ -53,7 +53,6 @@ echo "creating database Retail_DB"
 echo ""
 echo ""
 mysql <<EOF
-drop database retail_db;
 
 create database retail_db;
 
