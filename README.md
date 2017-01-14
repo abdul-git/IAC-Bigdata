@@ -1,15 +1,15 @@
-####Introduction
+#Introduction
 
 
 This document is only for reference purpose to help students with weekly labs and is a guide to work hands-on with Big-Data stack.  This document is living document and will be update during and after the course.
 
 We will use this repo to setup labs and individual cluster in order to complete hands on exercises.
 
-#Week-1: Intro to Hadoop 
+##Week-1: Intro to Hadoop 
 
-#Week-2: Cloudera hadoop cluster deployment in AWS
+##Week-2: Cloudera hadoop cluster deployment in AWS
 
-#Week-3a: Cloudera hadoop cluster deployment in AWS
+##Week-3a: Cloudera hadoop cluster deployment in AWS
 
 Continue from previous week.
 
