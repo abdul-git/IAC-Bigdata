@@ -62,6 +62,26 @@ echo "verify tables count"
 
 mysql retail_db < $LOC/retail_db.dmp
 
+echo " "
+echo "Count for categories"
+mysql -e "select count(*) from  retail_db.categories"
+echo " "
+echo "Count for categories"
+mysql -e "select count(*) from  retail_db.customers"
+echo " "
+echo "Count for departments"
+mysql -e "select count(*) from  retail_db.departments"
+echo " "
+echo "Count for order_items"
+mysql -e "select count(*) from  retail_db.order_items"
+echo " "
+echo "Count for orders"
+mysql -e "select count(*) from  retail_db.orders"
+echo " "
+echo "Count for products"
+mysql -e "select count(*) from  retail_db.products"
+
+
 gzip $LOC/retail_db.dmp
 fi
 else 
