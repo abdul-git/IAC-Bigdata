@@ -21,11 +21,21 @@ Continue from previous week.
 
 4 - 	Configure RM - HA
 
-#Week-3b: MYSQL Setup
+##Week-3b: MYSQL Setup
 
-After successful cluster deployment in AWS we will need to setup MySQL database from scripts that can be found at GitHub repo for data movement exercises.
+After successful Hadoop cluster deployment in AWS, we will need to setup MySQL databases from scripts that can be found at GitHub repo for data movement exercises.
 
-https://github.com/abdul-git/IAC-Bigdata
+
+repo URL = https://github.com/abdul-git/IAC-Bigdata
+
+Also, repo can be cloned using code below:
+
+```
+git clone https://github.com/abdul-git/IAC-Bigdata.git
+```
+
+
+
 
 
 We will work with three different type of datasets: Airlines, Retail_DB and Employees
