@@ -40,12 +40,11 @@ git clone https://github.com/abdul-git/IAC-Bigdata.git
 
 We will work with three different type of datasets: Airlines, Retail_DB and Employees
 
-
+```shell
 *•	Create database xxxx*
-
-•	Load data into interim mysql database
-
-•	Verify tables and dataset
+*•	Load data into interim mysql database*
+*•	Verify tables and dataset*
+```
 
 First we need to download and stage installation scripts from GitHub repo
 
