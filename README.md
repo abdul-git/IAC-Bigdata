@@ -62,7 +62,7 @@ Where "/xyz" is location where you cloned and stored git repo.
 
 ##Execute scripts
 
-Before we import data, we need to setup MySQL for password less execution. In order to do that, switch to directory by using code below:
+Before we can import data, we need to setup MySQL for password less execution. In order to do that, switch to directory by using code below:
 
 ```shell
 cd ~/IAC-Bigdata/labs/week3/
