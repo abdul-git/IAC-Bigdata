@@ -3,7 +3,7 @@
 
 ## Get data first
 ###------------
-###Setup you environment!!! or script will not work!
+###Setup your environment!!! or script will not work!
 ###------------
 ##
 ## Change below to your directory structure!
