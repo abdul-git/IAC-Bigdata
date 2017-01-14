@@ -1,13 +1,23 @@
 #!/bin/bash
+####################################################
+# Version: 1.1
+# Script Name: 1_drop_create_airlines_tables.bash
+# Date created: 3/13/2016
+# Purpose : Creates Employees database in MySQL
+# Author: Abdul Khan
+# History:
+#       v1.0 - 03-20-2016 Initial script created
+#       v1.1 - 01-13-2017 Fixed bugs related to missing checks for compress data file
+####################################################
 
 
 ## Get data first
 ###------------
-###Setup you environment!!! or script will not work!
+###Setup your environment!!! or script will not work!
 ###------------
 ##
 ## Change below to your directory structure!
-export LOC=~/IAC-Bigdata/labs/week3/setup_mysql/airlines
+export LOC=$PWD
 ###-----------
 ### End Environment
 ###-----------
