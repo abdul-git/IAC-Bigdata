@@ -40,6 +40,7 @@ git clone https://github.com/abdul-git/IAC-Bigdata.git
 
 We will work with three different type of datasets: Airlines, Retail_DB and Employees
 
+Emphasis
 •	Create database xxxx
 
 •	Load data into interim mysql database
