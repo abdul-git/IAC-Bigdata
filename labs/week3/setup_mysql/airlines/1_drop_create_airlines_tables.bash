@@ -1,6 +1,6 @@
 #!/bin/bash
 ####################################################
-# Version: 1.1
+# Version: 1.2
 # Script Name: 1_drop_create_airlines_tables.bash
 # Date created: 3/13/2016
 # Purpose : Creates Employees database in MySQL
@@ -8,6 +8,7 @@
 # History:
 #       v1.0 - 03-20-2016 Initial script created
 #       v1.1 - 01-13-2017 Fixed bugs related to missing checks for compress data file
+#       v1.1 - 01-13-2017 Fixed bugs related variable path "LOC"
 ####################################################
 
 
