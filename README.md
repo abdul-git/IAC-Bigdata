@@ -64,24 +64,6 @@ Where "/xyz" is location where you cloned and stored git repo. The directory str
  cd  ~/IAC-Bigdata/labs/week3/setup_mysql
 ```
 
-
-##Execute scripts
-
-Before we can import data, we need to setup MySQL for password less execution. In order to do that, switch to directory by using code below:
-
-```shell
-cd ~/IAC-Bigdata/labs/week3/
-```
-
-Once you are in Week3 directory, execute the setup scripts as below:
-
-```shell
-./create_mycf.sh
-./create_ec2_user.sh
-```
-
-Scripts above will create env file and creates user ec2-user(for AWS deployment), so mysql login will not prompt for password.
-
 #####Week 3 -Data Lab Setup
 
 For Week 3 Data labs, sequence below should be followed to complete the data labs
@@ -95,6 +77,24 @@ For Week 3 Data labs, sequence below should be followed to complete the data lab
 ##### Database creation
 
 Instructions for DB creation can be followed by using README for each database.
+
+
+##Execute scripts
+
+Before we can import data, we need to setup MySQL for password less execution. In order to do that, switch to directory by using code below:
+
+```shell
+cd ~/IAC-Bigdata/labs/week3/setup_mysql
+```
+
+Once you are in Week3 directory, execute the setup scripts as below:
+
+```shell
+./create_mycf.sh
+./create_ec2_user.sh
+```
+
+Scripts above will create env file and creates user ec2-user(for AWS deployment), so mysql login will not prompt for password.
 
 
 #Week-4
