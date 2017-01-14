@@ -3,19 +3,23 @@
 
 This document is only for reference purpose to help students with weekly labs and is a guide to work hands-on with Big-Data stack.  This document is living document and will be update during and after the course.
 
-We will use this repo to setup labs and individual cluster in order to work on hands on exercises.
+We will use this repo to setup labs and individual cluster in order to complete hands on exercises.
 
-###Week-1: Intro to Hadoop
+#Week-1: Intro to Hadoop 
 
 #Week-2: Cloudera hadoop cluster deployment in AWS
 
 #Week-3a: Cloudera hadoop cluster deployment in AWS
 
 Continue from previous week.
-•	Add a new data node to existing cluster
-•	Configure Hadoop NN HA –
-•	Perform manual and automatic switchover
-•	Configure RM - HA
+
+1 -	Add a new data node to existing cluster
+
+2 -	Configure Hadoop NN HA –
+
+3 -	Perform manual and automatic switchover
+
+4 - 	Configure RM - HA
 
 #Week-3b: MYSQL Setup
 
