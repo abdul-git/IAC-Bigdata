@@ -30,7 +30,7 @@ repo URL = https://github.com/abdul-git/IAC-Bigdata
 
 Also, repo can be cloned using code below:
 
-```
+```shell
 git clone https://github.com/abdul-git/IAC-Bigdata.git
 ```
 
