@@ -58,7 +58,12 @@ Above command will clone needed scripts to stage the datasets.
  cd  /xyz/IAC-Bigdata/labs/week3/setup_mysql
 ```
 
-Where "/xyz" is location where you cloned and stored git repo.
+Where "/xyz" is location where you cloned and stored git repo. The directory structure will be different for your environment. If you cloned git repo under your home directory, you can use following command to change directory also:
+
+```shell
+ cd  ~/IAC-Bigdata/labs/week3/setup_mysql
+```
+
 
 ##Execute scripts
 
