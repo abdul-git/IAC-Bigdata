@@ -22,6 +22,9 @@ Before we can import sample data into MySQL, we need to configure MySQL for pass
 2 -     After successfully creating “.my.cnf” file, execute script “create_ec2_user.sh” and this will create user called “ec2-user” in MySQL database.
 
 3 -     Once, step above are successful, you can create databases below from respective directories:
+
 		a -     airlines
+
 		b -     employess
+
 		c -     retail_db
