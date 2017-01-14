@@ -41,55 +41,45 @@ git clone https://github.com/abdul-git/IAC-Bigdata.git
 We will work with three different type of datasets: Airlines, Retail_DB and Employees
 
 ```shell
-*•	Create database xxxx*
-*•	Load data into interim mysql database*
-*•	Verify tables and dataset*
+•	Create database xxxx
+•	Load data into interim mysql database
+•	Verify tables and dataset
 ```
 
 First we need to download and stage installation scripts from GitHub repo
 
-git clone https://github.com/abdul-git/IAC-Bigdata
+```shell
+git clone https://github.com/abdul-git/IAC-Bigdata.git
+```
 
 
 Above command will clone needed scripts to stage the datasets.
+```shell
  cd  /xyz/IAC-Bigdata/labs/week3/setup_mysql
+```
 
-cd airlines
+Where "/xyz" is location where you cloned and stored git repo.
 
-cat 1_create_pw.ksh
+##Execute scripts
 
-Change root password to match your password
+Before we import data, we need to setup MySQL for password less execution. In order to do that, switch to directory by using code below:
 
-echo "[client]" > ~/.my.cnf
-echo "user=root" >> ~/.my.cnf
-echo "password=xxxxxxx" >> ~/.my.cnf
+```shell
+cd $PWD/labs/week3/
+```
 
+Once you are in Week3 directory, execute the setup scripts as below:
 
-echo "test mysql login"
-echo "listing databases"
-echo "================="
-echo ""
+```shell
+./create_mycf.sh
+./create_ec2_user.sh
+```
 
-mysql <<EOF
+Scripts above will create env file and creates user ec2-user(for AWS deployment), so mysql login will not prompt for password.
 
-show databases;
+##### Database creation
 
-EOF
-
-echo ""
-echo "================="
-
-
-#Execute scripts
-
-./1_create_pw.ksh
-
-Script above will create env file, so mysql login will not prompt for password.
-
-./2_drop_create_airlines_tables.ksh
-
-Script above will download airlines data for year 2008, create database called “airlines” and populate three tables.
-
+Instructions for DB creation can be followed by using README for each database.
 
 
 #Week-4
