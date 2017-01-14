@@ -35,7 +35,7 @@ echo "check if ontime file exists and uncompress "
 check_ontime=`ls 2008.csv|wc -l`
 echo ""
 echo ""
-echo "Ontime file found!!! count = $check_ontime"
+echo "Ontime file count = $check_ontime"
 
 echo ""
 echo ""
