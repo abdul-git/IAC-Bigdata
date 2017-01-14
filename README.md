@@ -79,7 +79,7 @@ For Week 3 Data labs, sequence below should be followed to complete the data lab
 Instructions for DB creation can be followed by using README for each database.
 
 
-##Execute scripts
+#####Execute scripts
 
 Before we can import data, we need to setup MySQL for password less execution. In order to do that, switch to directory by using code below:
 
