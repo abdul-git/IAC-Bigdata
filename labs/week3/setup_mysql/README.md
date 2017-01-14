@@ -6,7 +6,9 @@ Before we can import sample data into MySQL, we need to configure MySQL for pass
 
 				----------------------------------------------------
 				[root@ip-172-31-12-92 setup_mysql]# ./create_mycf.sh  
-				Enter root Password for MySQL: test mysql login 
+				Enter root Password for MySQL: 
+				
+				test mysql login 
 				listing databases 
 				================= 
 				  
