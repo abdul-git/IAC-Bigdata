@@ -77,6 +77,16 @@ Once you are in Week3 directory, execute the setup scripts as below:
 
 Scripts above will create env file and creates user ec2-user(for AWS deployment), so mysql login will not prompt for password.
 
+#####Week 3 -Data Lab Setup
+
+For Week 3 Data labs, sequence below should be followed to complete the data labs
+
+1 - setup_mysql - Create and load data into MySQL databases
+
+2 - import_data - imports data from MySQL using sqoop 
+
+3 - mr_word_count - Sample map reduce program - pre-built or you can compile java code
+
 ##### Database creation
 
 Instructions for DB creation can be followed by using README for each database.
