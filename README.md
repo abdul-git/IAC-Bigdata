@@ -64,7 +64,7 @@ Where "/xyz" is location where you cloned and stored git repo. The directory str
  cd  ~/IAC-Bigdata/labs/week3/setup_mysql
 ```
 
-#####Week 3 -Data Lab Setup
+###Week 3 -Data Lab Setup
 
 For Week 3 Data labs, sequence below should be followed to complete the data labs
 
