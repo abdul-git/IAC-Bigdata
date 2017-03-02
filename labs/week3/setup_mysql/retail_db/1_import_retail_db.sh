@@ -7,7 +7,8 @@
 ###------------
 ##
 ## Change below to your directory structure!
-export LOC=~/IAC-Bigdata/labs/week3/setup_mysql/retail_db
+#export LOC=~/IAC-Bigdata/labs/week3/setup_mysql/retail_db
+export LOC=$PWD
 ###-----------
 ### End Environment
 ###-----------

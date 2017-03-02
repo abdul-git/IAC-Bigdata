@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ####################################################
-# Version: 1.1
+# Version: 1.2
 # Script Name: 1_create_database_employees_tables.sh
 # Date: 1/13/2017
 # Purpose : Creates Employees database in MySQL
@@ -9,6 +9,7 @@
 # History:
 # 	v1.0 - 03-20-2016 Initial script created
 # 	v1.1 - 01-13-2017 Fixed bugs related to missing checks for compress data file
+# 	v1.2 - 01-13-2017 Fixed bugs related to path LOC
 ####################################################
 
 ## Get data first
@@ -17,7 +18,7 @@
 ###------------
 ##
 ## Change below to your directory structure!
-export LOC=~/IAC-Bigdata/labs/week3/setup_mysql/employees
+export LOC=$PWD
 #export LOC=/root/employees
 ###-----------
 ### End Environment 
